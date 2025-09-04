@@ -10,7 +10,7 @@
 
 File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files. It is a **create-your-own-cloud**-kind of software where you can just install it on your server, direct it to a path and access your files through a nice web interface.
 
-<code>
+```
 services:
   filebrowser:
     image: filebrowser/filebrowser    # 使用官方的 FileBrowser 镜像
@@ -25,7 +25,7 @@ services:
       - ./filebrowser_config:/config  # 挂载配置目录，存放 settings.json 等配置文件
     restart: always                   # 设置容器自动重启策略（异常退出后自动重启）
 
-</code>
+```
 
 
 ## Documentation
